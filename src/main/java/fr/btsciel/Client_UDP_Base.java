@@ -30,8 +30,6 @@ public class Client_UDP_Base {
                     continue;
                 }
                 envoyerOctets(socket, octetsEnvoyes, adresseServeur, PORT);
-                DatagramPacket paquet = new DatagramPacket(octetsEnvoyes, octetsEnvoyes.length, adresseServeur, PORT);
-                socket.send(paquet);
                 System.out.println("La requête : " + requete);
                 try {
                     // Lecture directe du contenu utile du paquet sous forme de bytes.
