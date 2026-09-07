@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Locale;
+
 
 public class Serveur_TCP_Base {
     private static final int PORT = 4000;
