@@ -14,7 +14,8 @@ public class Serveur_TCP_Base {
     private static final String MESSAGE_ACCUEIL = "Entrez une phrase qui sera mise en majuscule par le serveur (exit pour finir)";
 
     static void main(String[] args) throws IOException {
-        try (ServerSocket serveur = new ServerSocket(PORT)) {
+
+            ServerSocket serveur = new ServerSocket(PORT);
             System.out.println("Serveur en fonctionnement sur le port " + PORT + ".");
             while (true) {
                 try {
@@ -38,7 +39,7 @@ public class Serveur_TCP_Base {
                 System.err.println("Connexion interrompue : " + e.getMessage());
             }
             System.out.println("Client déconnecté.");
-        }
+
     }
 }
 }
