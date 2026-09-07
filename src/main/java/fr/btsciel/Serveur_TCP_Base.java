@@ -22,7 +22,7 @@ public class Serveur_TCP_Base {
                     Socket client = serveur.accept();
                     BufferedReader entree = new BufferedReader(new InputStreamReader(client.getInputStream()));
                     PrintWriter sortie = new PrintWriter(client.getOutputStream(), true);
-                    System.out.println("Connexion avec : " + client.getInetAddress());
+                    System.out.println("Connexion avec : " + client);
                     sortie.println(MESSAGE_ACCUEIL);
                     String messageRecu;
                     while ((messageRecu = entree.readLine()) != null) {
@@ -31,7 +31,7 @@ public class Serveur_TCP_Base {
                             sortie.println("JE VOUS DECONNECTE !!!");
                             break;
                         }
-                        String reponse = messageRecu.toUpperCase(Locale.ROOT);
+                        String reponse = messageRecu.toUpperCase();
                         sortie.println(reponse);
                         System.out.println("Message émis : " + reponse);
                     }
