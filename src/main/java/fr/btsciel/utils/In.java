@@ -1,4 +1,4 @@
-package fr.btsciel;/*
+package fr.btsciel.utils;/*
  * Created on 27 ao?t 2006
  *
  * TODO To change the template for this generated file go to

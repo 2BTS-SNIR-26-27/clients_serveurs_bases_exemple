@@ -1,4 +1,4 @@
-package fr.btsciel;
+package fr.btsciel.tcp;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package fr.btsciel;
+package fr.btsciel.udp;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;

@@ -1,6 +1,8 @@
-package fr.btsciel; /**
+package fr.btsciel.tcp; /**
  * @author Michael
  */
+
+import fr.btsciel.utils.In;
 
 import java.net.*;
 import java.io.*;
